@@ -14,6 +14,11 @@ h2{
     max-width: 700px; 
 }
 
+.news__date{
+    font-style: italic;
+    font-size: small;
+
+}
 .noticias__form{
     border: 2px solid rgba(170, 227, 245, 0.938);
     border-radius: 6px;
@@ -28,7 +33,6 @@ h2{
 
 .noticias__formulario--item{
     margin-top: 2px;
-
 }
 
 .noticias__formulario--btn{
@@ -50,6 +54,10 @@ input{
     padding: 6px;
     min-width: 350px;
     color: gray;
+}
+
+.input__text{
+    height: 150px;
 }
 
 .noticias__formulario--boton{

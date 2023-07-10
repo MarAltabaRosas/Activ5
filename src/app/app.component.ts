@@ -27,11 +27,7 @@ export class AppComponent {
       }
     ]
   }
-
-     cargarNoticias(){
-      console.log(this.noticias)
-    }
-    
+     
     getNoticia($event: Noticia){
       this.noticias.push($event);
     }
