@@ -1,7 +1,7 @@
 <main>
   <section>
     <div>
-      <app-blog [misNoticias]="noticias"></app-blog>
+      <app-blog [misNoticias]="noticias" (noticiaEmitida)="getNoticia($event)"></app-blog>
     </div>
   </section>  
 </main>

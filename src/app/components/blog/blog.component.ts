@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Noticia } from 'src/app/interfaces/noticia.interface';
 
 @Component({
@@ -8,7 +8,14 @@ import { Noticia } from 'src/app/interfaces/noticia.interface';
 })
 export class BlogComponent {
 
+  newNoticia: Noticia = {title:"", img: "", text: "", date: new Date(0)};
+
   @Input() misNoticias: Noticia[] = []
+  @Output() noticiaEmitida: EventEmitter<Noticia>
+
+  constructor(){
+    this.noticiaEmitida = new EventEmitter();
+  }
 
   cargarNoticias(): any{
  
@@ -24,4 +31,7 @@ export class BlogComponent {
     return html;  
   }
 
+  getDataForm(){
+    this.noticiaEmitida.emit(this.newNoticia);
+  }
 }

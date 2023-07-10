@@ -7,10 +7,11 @@ h2{
     flex-direction: column;
 }
 
+.news{
+    border-bottom: solid 2px rgba(170, 227, 245, 0.938);
+}
 .news__img{
-    max-width: 700px;
-    
-    
+    max-width: 700px; 
 }
 
 .noticias__form{

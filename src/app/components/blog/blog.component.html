@@ -9,23 +9,23 @@
             <div class="noticias__formulario--campos">
             <div class="noticias__formulario--item">
                 <label for="title">Título de la notícia</label>
-                <input type="text" id="title" placeholder="Introduce el título">
+                <input type="text" id="title" placeholder="Introduce el título" [(ngModel)]="newNoticia.title">
             </div>
             <div class="noticias__formulario--item">
                 <label for="img">Imagen</label>
-                <input type="text" id="img" placeholder="Introduce una imagen">
+                <input type="text" id="img" placeholder="Introduce una imagen" [(ngModel)]="newNoticia.img">
             </div>
             <div class="noticias__formulario--item">
                 <label for="text">Cuerpo de la notícia</label>
-                <input type="text" id="text" placeholder="Introduce el texto">
+                <input type="text" id="text" placeholder="Introduce el texto" [(ngModel)]="newNoticia.text">
             </div>
             <div class="noticias__formulario--item">
                 <label for="date">Fecha de publicación</label>
-                <input type="date" id="date" placeholder="Introduce la fecha de publicación">
+                <input type="date" id="date" placeholder="Introduce la fecha de publicación" [(ngModel)]="newNoticia.date">
             </div>
             </div>
             <div class="noticias__formulario--btn">
-            <button type="button" class="noticias__formulario--boton">Añadir notícia</button>
+            <button (click)="getDataForm()" class="noticias__formulario--boton">Añadir notícia</button>
             </div>
         </section>
     </div>
