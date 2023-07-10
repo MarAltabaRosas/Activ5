@@ -1,11 +1,12 @@
 <section class="noticias">
     <div class="noticias__lista">
-        <h1>Notícias creadas</h1>
+        <div [innerHTML]="cargarNoticias()"></div>
     </div>
 
-    <div class="noticias__formulario">
-        <h1>Añadir notícias</h1>
-        <div>
+    <div class="noticias__form">
+        <h1>Creación de nuevas notícias</h1>
+        <section class="noticias__formulario">
+            <div class="noticias__formulario--campos">
             <div class="noticias__formulario--item">
                 <label for="title">Título de la notícia</label>
                 <input type="text" id="title" placeholder="Introduce el título">
@@ -22,8 +23,11 @@
                 <label for="date">Fecha de publicación</label>
                 <input type="date" id="date" placeholder="Introduce la fecha de publicación">
             </div>
-            <button class="noticias__formulario--boton">Añadir notícia</button>
-        </div>
+            </div>
+            <div class="noticias__formulario--btn">
+            <button type="button" class="noticias__formulario--boton">Añadir notícia</button>
+            </div>
+        </section>
     </div>
 
 </section>

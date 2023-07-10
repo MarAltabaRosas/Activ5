@@ -1,19 +1,37 @@
+h2{
+    font-size: x-large;
+}
+
 .noticias{
     display: flex;
     flex-direction: column;
 }
 
-.noticias__lista{
-    background-color: rgb(32, 123, 202);
+.news__img{
+    max-width: 700px;
+    
+    
+}
 
+.noticias__form{
+    border: 2px solid rgba(170, 227, 245, 0.938);
+    border-radius: 6px;
+    
 }
 
 .noticias__formulario{
-    background-color: tomato;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6px;
 }
 
 .noticias__formulario--item{
     margin-top: 2px;
+
+}
+
+.noticias__formulario--btn{
+    display: flex;
 }
 
 label{
@@ -25,15 +43,25 @@ label{
 }
 
 input{
-    border: solid 1px black;
+    
+    border: solid 2px rgba(170, 227, 245, 0.938);
     border-radius: 4px;
     padding: 6px;
+    min-width: 350px;
+    color: gray;
 }
 
 .noticias__formulario--boton{
-    margin-top: 12px;
-    border: solid 1px black;
+    background-color: rgba(170, 227, 245, 0.938);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid 2px rgba(170, 227, 245, 0.938);
     border-radius: 4px;
-    padding: 6px;
-    width: 350px;
+    padding: 10px;
+    min-width: 350px;
+}
+
+.noticias__formulario--boton:hover {
+    background-color: white;
+    color: rgba(170, 227, 245, 0.938);
 }
